@@ -5,15 +5,7 @@
   <title>Random Max of Kindness</title>  
   <meta name="description" content="Random Maxes">  
   <meta name="author" content="Sean Yo">  
-  <link rel="stylesheet" href="css/styles.css?v=1.0">  
-
-  <style type="text/css">
-    div img {
-       display:block;
-       margin:auto;
-       padding-top: 4em;
-    }
- </style>
+  <link rel="stylesheet" href="min.css">
 
 </head>  
 <body>  
@@ -22,6 +14,10 @@ $imagesDir = 'maxes/';
 $images = glob($imagesDir . '*.{jpg,jpeg,png,gif}', GLOB_BRACE);
 $randomImage = $images[array_rand($images)];
 ?>
+
+<div class="header">
+    <h1>Random Max of Kindness</h1>
+</div>
 
 <div class="max"><?php echo '<img src="'.$randomImage.'" alt="" />' ?></div>
 
